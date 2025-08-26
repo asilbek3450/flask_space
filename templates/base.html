@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mars Dashboard</title>
+    
+    <link rel="stylesheet" href="./../static/main_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="logo">MARS°</div>
+        <ul>
+            <li class="active">🏠 Asosiy</li>
+            <li>📚 Kurslarim</li>
+            <li>🎓 Eduverse</li>
+            <li>💻 MarsCode</li>
+            <li>📝 Blog</li>
+            <li>🛒 Space shop</li>
+        </ul>
+        <div class="avatar">
+            <img class="head" src="https://lab.marsit.uz/media/hero_dashboard/None/Headset.png" alt="character head">
+            <img class="body" src="https://space.marsit.uz/img/hero-default-body.c471a504.png" alt="character body">
+            <img class="feet" src="https://space.marsit.uz/img/hero-default-feet.876a3274.png" alt="character feet">
+            <img class="stone" src="https://space.marsit.uz/img/stone.151e717a.png" alt="character feet">
+        </div>
+
+    </div>
+
+    <div class="main">
+        <header>
+            <div class="stats">
+                <span>🔥 7</span>
+                <span>🪙 19,042</span>
+                <span>⚡ 3,343</span>
+            </div>
+            <button class="subscribe">Obuna bo'ling</button>
+            <div class="profile">
+                <img src="https://cdn-icons-png.freepik.com/512/6400/6400258.png" alt="user">
+            </div>
+        </header>
+
+        {% block content %}
+        {% endblock content %}
+
+</body>
+
+</html>

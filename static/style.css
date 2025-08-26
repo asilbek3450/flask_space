@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url("https://space.marsit.uz/img/login-bg-child.a50519bb.jpg");
+    /* o'z rasmizni qo'yasiz */
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 100%;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color: white;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0d1b2a;
+}
+
+.logo .circle {
+    color: #ff4d4d;
+}
+
+.lang {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 100px;
+}
+
+.login-box {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    width: 300px;
+}
+
+.welcome {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.tab {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.tab button {
+    flex: 1;
+    padding: 8px 0;
+    border: none;
+    cursor: pointer;
+    background: #f2f2f2;
+    font-size: 14px;
+}
+
+.tab button.active {
+    background: #fff;
+    font-weight: bold;
+    border-bottom: 2px solid #ff8a65;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.btn {
+    width: 100%;
+    background: #ff8a65;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #ff7043;
+}
+
+.register {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.register a {
+    color: #ff7043;
+    text-decoration: none;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  min-width: 140px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  border-radius: 6px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 8px 12px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
